@@ -73,7 +73,7 @@ def list_s3_objects(prefix):
       object.append((item['Key'],item['Size']))
   return object
 
-def download_folder_to_s3(prefix,local_dir):
+def download_folder_from_s3(prefix,local_dir):
   downloaded = 0
   skipped = 0
   bucket = setting.S3_BUCKET_NAME

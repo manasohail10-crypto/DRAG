@@ -13,9 +13,15 @@ class Setting(BaseSettings):
     QDRANT_URL: str
     QDRANT_API_KEY: str
     PORTKEY_API_KEY: str
-    LANGCHAIN_TRACING_V2: bool
-    LANGCHAIN_ENDPOINT: str
-    LANGCHAIN_API_KEY: str
-    LANGCHAIN_PROJECT: str
+    LANGSMITH_TRACING: bool
+    LANGSMITH_ENDPOINT: str
+    LANGSMITH_API_KEY: str
+    LANGSMITH_PROJECT: str
+
+    RAW_DIR: str = "data/raw"
+    PARSED_DIR: str= "data/parsed"
+    PROCESSED_DIR: str = "data/processed"
+    S3_RAW_PREFIX: str = "raw/"
+
 
 setting = Setting()

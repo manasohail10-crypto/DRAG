@@ -6,3 +6,5 @@ sentence-transformers
 qdrant-client
 tqdm
 pytest
+langsmith
+logfire
