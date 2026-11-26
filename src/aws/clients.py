@@ -18,4 +18,4 @@ def get_s3_client():
   logfire.info("Creating a NEW S3 CLIENT")
   that_config = Config(retries={"max_attempts":5,"mode":'standard'})
   client = get_boto3_session().client("s3",config=that_config)
-  return client  # FIX 1: function was not returning the client
+  return client  

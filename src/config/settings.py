@@ -23,5 +23,4 @@ class Setting(BaseSettings):
     PROCESSED_DIR: str = "data/processed"
     S3_RAW_PREFIX: str = "raw/"
 
-
 setting = Setting()
